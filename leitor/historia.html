@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HISTÓRIA</title>
+	    <!-- gerador de Leitor de texto --->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+	<link href="css/theme.css" rel="stylesheet">
+</head>
+<body>
+	<div id="escrita">
+            <h1 style="color: gray;";> HISTÓRIA </h1>
+			<p style="color: gray;";>
+			A palavra História, do grego "historie", significa conhecimento através da investigação.A disciplina<br>
+            estuda importantes períodos da humanidade, como Pré-História, que corresponde <br>
+            ao período que antecede a invenção da escrita, Antiguidade, Idade Média, Idade Moderna e <br>
+            Idade Contemporânea.<br>
+            A História do Brasil também é objeto de estudo da matéria, incluindo importantes acontecimentos, <br>
+            como a Independência do Brasil, Império, Abolição da Escravatura, República Velha, República Nova, <br>
+            além de processos de industrialização, modernização e evolução democrática da sociedade.<br>
+        </p>
+    </div>
+	   <!-- Bototão para iniciar a leitura do texto-->
+		<p><button id="ler">Ler texto</button></p>
+	<script type="text/javascript">
+		$('#ler').on('click', function(){
+			var tex = document.getElementById("escrita").textContent;
+			responsiveVoice.speak(tex, "Brazilian Portuguese Female");
+		});
+	</script>
+	
+</body>
+</html>

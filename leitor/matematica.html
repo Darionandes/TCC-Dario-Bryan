@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MATEMÁTICA</title>
+	    <!-- gerador de Leitor de texto --->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+	<link href="css/theme.css" rel="stylesheet">
+</head>
+<body>
+	<div id="escrita">
+            <h1 style="color: gray;";>MATEMÁTICA</h1>
+			<p style="color: gray;";>
+			A palavra Matemática tem origem grega e significa “aquilo que se pode aprender”. É uma ciência que <br>
+            estuda quantidades, medidas, estruturas, variações e estatísticas.<br>
+            O estudo da Matemática se aprimorou ao longo dos anos e hoje, por meio da criação de leis, teoremas <br>
+            e fórmulas, é possível encontrar resultados para inúmeros problemas. Através da matemática financeira, <br>
+            por exemplo, é viável analisar dados financeiros em geral. Já a estatística explica por meio de teorias <br>
+            probabilísticas a ocorrência de eventos.<br>
+            A geometria também é um importante ramo matemático, preocupada com as formas, tamanhos e posições <br>
+            relativas de figuras geométricas e propriedades da geometria espacial.
+		</p>
+    </div>
+	   <!-- Bototão para iniciar a leitura do texto-->
+		<p><button id="ler">Ler texto</button></p>
+	<script type="text/javascript">
+		$('#ler').on('click', function(){
+			var tex = document.getElementById("escrita").textContent;
+			responsiveVoice.speak(tex, "Brazilian Portuguese Female");
+		});
+	</script>
+	
+</body>
+</html>

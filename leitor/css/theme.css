@@ -1,0 +1,51 @@
+body{
+    font-family: Arial, Verdana, Tahoma, Sans-Serif;
+
+    color: #333333;
+
+    font-size: 16px;
+
+}
+
+p{
+    line-height: 20px;
+    text-align: justify;
+    text-indent: 50px;
+    text-align: center;
+}
+
+h1{   
+    text-align: justify;
+    text-indent: 20px;
+    text-align: center;
+}
+
+h2{
+    text-indent: 20px;
+}
+
+h3{   
+    font-weight: bold;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+button{
+    background: #06c293d8; 
+    border-radius: 6px; 
+    padding: 15px; 
+    cursor: pointer; 
+    color: #fff; 
+    border: none; 
+    font-size: 16px;
+}
+
+iframe{
+    border: none;
+}
+
+iframe{
+    border: none;
+}

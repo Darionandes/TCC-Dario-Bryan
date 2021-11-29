@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LÍNGUA PORTUGUESA</title>
+        <!-- gerador de Leitor de texto --->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+	<link href="css/theme.css" rel="stylesheet">
+</head>
+<body>
+	<div id="escrita">
+            <h1 style="color: gray"> LÍNGUA PORTUGUESA </h1>
+        <p style="color: gray;";>
+			A Língua Portuguesa está entre os 10 idiomas mais falados do mundo e possui uma significativa <br>
+            lista de regras e acordos coordenados pela Academia Brasileira de Letras.<br>
+            Dentre as áreas mais importantes da disciplina, estão: morfologia, que estuda as palavras <br>
+            isoladamente; sintaxe, responsável por estudar as palavras enquanto elementos de uma frase; <br>
+            e semântica, que estuda o significado das palavras e os sentidos que elas podem tomar de acordo <br>
+            com o contexto.<br>
+            O Português pode assumir culturalmente duas normas: língua coloquial e língua culta. A primeira <br>
+            é similar a fala cotidiana, sem muitas regras, e pode ser representada em cartaz, fábula e <br>
+            cartoon. Já a segun;a, segue as normas mais rígidas e são mais utilizadas na produção de <br>
+            textos para reportagem, redação e romance.
+        </p>
+    </div>
+    <!-- Bototão para iniciar a leitura do texto-->
+		<p><button id="ler">Ler texto</button></p>
+	<script type="text/javascript">
+		$('#ler').on('click', function(){
+			var tex = document.getElementById("escrita").textContent;
+			responsiveVoice.speak(tex, "Brazilian Portuguese Female");
+		});
+	</script>
+	
+</body>
+</html>

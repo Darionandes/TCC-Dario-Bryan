@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GEOGRAFIA</title>
+    <!-- gerador de Leitor de texto --->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+	<link href="css/theme.css" rel="stylesheet">
+</head>
+<body>
+	<div id="escrita">
+		
+            <h1 style="color: gray;";> GEOGRAFIA </h1>
+			<p style="color: gray;";>
+			A Geografia é a ciência que estuda elementos físicos, biológicos e humanos, e suas relações com o planeta Terra. 
+            <br>Tem como principal objetivo compreender a relação do homem com o meio ambiente, as condições climáticas e as 
+            <br>características do espaço geográfico.
+            <br>Dentre as áreas mais importantes da Geografia, estão: Biogeografia, Geografia Urbana, Geografia Agrária e Geopolítica.
+            <br>A Geografia do Brasil é muito extensa e rica. Mesmo sendo considerado um país de Clima Tropical, o País apresenta 
+            <br>grande diversidade climática e de vegetação. Uma de suas maiores riquezas é a Floresta Amazônica, maior floresta tropical 
+            <br>do mundo e responsável pela manutenção do oxigênio do planeta.
+        </p>
+    </div>
+	   <!-- Bototão para iniciar a leitura do texto-->
+		<p><button id="ler">Ler texto</button></p>
+	    <script type="text/javascript">
+		$('#ler').on('click', function(){
+			var tex = document.getElementById("escrita").textContent;
+			responsiveVoice.speak(tex, "Brazilian Portuguese Female");
+		});
+	</script>
+	
+</body>
+</html>
